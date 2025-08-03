@@ -11,3 +11,13 @@ Before the flight took off:
 - Bob’s luggage went missing.
 - The staff prepared a daily report before resetting for the next flight.
 """
+
+luggage = [("Alice", 23),( "Bob", 18), ("Charlie", 25)]
+passenger = ("Daisy", 20)
+luggage.append(passenger)
+print(luggage)
+del luggage[1]
+print(luggage)
+luggage.clear()
+print(luggage)
+

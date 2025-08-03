@@ -19,9 +19,33 @@ At checkout:
 - The shared cart is then emptied to prepare it for the next customer.
 """
 
+cart = {}
+godiya = cart
+daniella = cart
+
+daniella["Shoes"] = 2
+print(daniella)
+godiya["Watch"] = 1
+print(godiya)
+daniella.pop("Shoes")
+print(daniella)
+godiya["Bag"] = 1
+print(godiya)
+godiya.pop("Bag")
+print(godiya)
+
+summary_of_cart = cart.copy()
+print(summary_of_cart)
+cart.clear()
+print(cart)
 
 # print(godiya)
 # print(daniella)
 # print(godiya == daniella) # should return true
 # print(summary_of_cart)
 # print(cart)
+
+
+
+
+
